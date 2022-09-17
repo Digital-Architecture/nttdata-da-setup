@@ -1,0 +1,38 @@
+name: "[Empty Repo] - Criação de Repositório"
+
+description: Criação de repositório vazio, sem stack e deploys configurados!
+title: "Criação de repositório vazio"
+labels: ["repositorio","empty-repo"]
+
+assignees:
+ - ${{github.author}}
+
+body:
+  - type: markdown
+    attributes:
+      value: 
+        Formulário padrão para criação de repositório no Github NTTData
+  - type: input
+    attributes:
+      label: ">>Departamento<<"
+      description: Departamento
+      placeholder: DA
+    validations:
+      required: true 
+  - type: input
+    attributes:
+      label: ">>Aplicacao<<"
+      description: Nome da Aplicação ou Produto
+      placeholder: nomedaminhaaplicação
+    validations:
+      required: true 
+  - type: dropdown
+    attributes:
+      label: ">>Templates<<"
+      description: Selecione o template desejado?
+      options:
+        - nttdata-template-empty-public
+        - nttdata-template-empty-private
+    validations:
+      required: true 
+
