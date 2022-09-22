@@ -12,7 +12,10 @@ inputs:
     description: Nome da Aplicação ou Serviço
     required: true
   template:
-    description: template
+    description: Templates
+    required: true
+  modulo:
+    description: Nome do Modulo
     required: true
 runs:
   using: docker
@@ -22,6 +25,7 @@ runs:
     DEPART: ${{ inputs.depart }}
     APP: ${{ inputs.app }}
     TEMPLATE: ${{ inputs.template }}
+    MODULO: ${{ inputs.modulo }}
 branding:
   icon: gift
   color: blue

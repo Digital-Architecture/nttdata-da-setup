@@ -59,6 +59,7 @@ jobs:
           app: ${{ fromJson(needs.from-to-json.outputs.payload-parsed)['Aplicacao'] }}
           template: ${{ fromJson(needs.from-to-json.outputs.payload-parsed)['Templates'] }}
           gh-token: ${{ secrets.GH_TOKEN }}
+          modulo: ${{ fromJson(needs.from-to-json.outputs.payload-parsed)['Modulos'] }}
 
   add-error-comment:
     name: Add error comment
