@@ -20,7 +20,7 @@ then
 
 elif [ "$TEMPLATE" == "nttdata-template-modules-terraform" ]
 then
-    $GITHUB_CLI repo create --template Digital-Architecture/${TEMPLATE} Digital-Architecture/terraform-modules-aws-${MODULE} --public
+    $GITHUB_CLI repo create --template Digital-Architecture/${TEMPLATE} Digital-Architecture/terraform-modules-aws-${MODULO} --public
 
 else
     echo "Template invalid!!!!"
