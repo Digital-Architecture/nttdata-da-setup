@@ -1,0 +1,28 @@
+name: "[CLOUD AWS] Criação Terraform Modulos AWS"
+description: Criação de repositório Terraform Modulos AWS"
+title: Criação de Repositório Terraform Modulos AWS
+labels: ["infra","repositorio"]
+assignees:
+  - ${{github.author}}
+
+body:
+  - type: markdown
+    attributes:
+      value: 
+        Formulário padrão para criação de repositório Terraform Modulos AWS no Github NTTData
+  - type: input
+    attributes:
+      label: ">>Modulos<<"
+      description: Digite o nome do modulo
+      placeholder: ec2
+    validations:
+      required: true 
+  - type: dropdown
+    attributes:
+      label: ">>Templates<<"
+      description: Selecione o template desejado?
+      options:
+        - nttdata-template-modules-terraform
+    validations:
+      required: true 
+  
