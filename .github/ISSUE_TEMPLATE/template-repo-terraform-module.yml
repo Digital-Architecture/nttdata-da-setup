@@ -1,4 +1,4 @@
-name: "[INFRA] Criação de Terraform Modulos"
+name: "[INFRA] Criação de Repositório Terraform Modulos"
 description: Criação de repositório para criação Terraform Modulos"
 title: Criação de Repositório Terraform Modulos
 labels: ["infra","repositorio"]

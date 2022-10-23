@@ -15,7 +15,7 @@ inputs:
   template:
     description: Templates
     required: true
-  Modulo:
+  modulo:
     description: Nome do Modulo
     required: true
   projeto:
